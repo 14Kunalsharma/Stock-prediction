@@ -4,9 +4,6 @@ import numpy as np
 import joblib  # Moved to top for reliability
 import yfinance as yf
 import streamlit as st
-import os
-
-st.write(os.listdir())
 
 st.set_page_config(page_title="Stock Predictor", layout="centered")
 
