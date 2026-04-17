@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib  # Moved to top for reliability
-
+import yfinance as yf
 import streamlit as st
 import os
 
@@ -50,7 +50,7 @@ if st.button("Predict"):
 
 # Chart
 try:
-    df = pd.read_csv("data/Tesla.csv")
+    df = yf.download("TSLA", start="2020-01-01")
     st.subheader("Historical Trend")
     st.line_chart(df["Close"])
 except:
