@@ -50,7 +50,7 @@ if st.button("Predict"):
 
 # Chart
 try:
-    df = pd.read_csv("Tesla.csv")
+    df = pd.read_csv("data/Tesla.csv")
     st.subheader("Historical Trend")
     st.line_chart(df["Close"])
 except:
