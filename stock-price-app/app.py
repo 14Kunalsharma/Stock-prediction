@@ -14,8 +14,8 @@ st.title("📈 Stock Price Prediction App")
 
 # Load model and scaler
 try:
-    model = joblib.load("model.pkl")
-    scaler = joblib.load("scaler.pkl")
+    model = joblib.load("stock-price-app/model.pkl")
+    scaler = joblib.load("stock-price-app/scaler.pkl")
     st.success("Model and Scaler loaded successfully ✅")
 except Exception as e:
     st.error(f"Error loading model files: {e}")
